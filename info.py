@@ -17,10 +17,10 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'jagdeesh_deepak')
+SESSION = environ.get('SESSION', 'jagdeesh')
 API_ID = int(environ.get('API_ID', '4234473'))
 API_HASH = environ.get('API_HASH', '6d9e82c9edc244b0c0a20d8fa89f9784')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7689478432:AAE5S6FS_xpoi2ylNf8MTz5ZtbWOl-a6eSM")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7707396854:AAHYPvTe_rv7pxmkzQ04w1QN0_FEeEGYRiY")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -30,8 +30,8 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002388027077'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1308498708').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002894385127'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1946827941').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002428424894').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -44,16 +44,16 @@ auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe chann
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002428424894')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002779287014')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002428424894')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002802671894')).split()]
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jagadeesh:jagadeesh@jagadeesh.r4eca.mongodb.net/?retryWrites=true&w=majority&appName=jagadeesh")
-DATABASE_NAME = environ.get('DATABASE_NAME', "jagadeesh")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jagadeesh')
+DATABASE_NAME = environ.get('DATABASE_NAME', "jagadeeshs")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jagadeeshs')
 
 # Premium And Referal Settings
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
@@ -71,10 +71,10 @@ CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "") # Necessary If clone 
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://telegram.me/Drberlinbot')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://telegram.me/Drberlinbot')
-TUTORIAL = environ.get('TUTORIAL', 'https://telegram.me/Drberlinbot')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Drberlinbot') # Support Chat Link Without https:// or @
+GRP_LNK = environ.get('GRP_LNK', 'https://telegram.me/Request_any_review_bot')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://telegram.me/Request_any_review_bot')
+TUTORIAL = environ.get('TUTORIAL', 'https://telegram.me/Request_any_review_bot')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Request_any_review_bot') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -103,7 +103,7 @@ VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
 # if verify second shortner is True then fill below url and api
 VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', '')
 VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://telegram.me/Drberlinbot')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://telegram.me/Request_any_review_bot')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
